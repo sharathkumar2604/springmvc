@@ -1,9 +1,8 @@
-package com.xworkz.cakes.configuration;
+package com.xwork.fruits.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class FrontControllerConfiguration  extends AbstractAnnotationConfigDispatcherServletInitializer 
-{
+public class FrontControllerConfiguration extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -18,8 +17,9 @@ public class FrontControllerConfiguration  extends AbstractAnnotationConfigDispa
 
 	@Override
 	protected String[] getServletMappings() {
-String[] validate = {"/"};
+ String[] validate = {"/"};		
 		return validate;
 	}
+	
 
 }

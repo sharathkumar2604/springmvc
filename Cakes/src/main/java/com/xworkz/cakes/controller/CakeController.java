@@ -25,7 +25,7 @@ public class CakeController {
 		
 		model.addAttribute("nameForPage",name);
 		model.addAttribute("emailForPage",email);
-		model.addAttribute("password", password);
+		model.addAttribute("password",password);
 		
 		
 		return "signin";

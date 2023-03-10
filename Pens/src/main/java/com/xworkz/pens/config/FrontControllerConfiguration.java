@@ -1,9 +1,18 @@
-package com.xworkz.cakes.configuration;
+package com.xworkz.pens.config;
 
+import org.springframework.beans.propertyeditors.ClassArrayEditor;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class FrontControllerConfiguration  extends AbstractAnnotationConfigDispatcherServletInitializer 
-{
+public class FrontControllerConfiguration extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+	
+	
+	
+	public FrontControllerConfiguration() {
+
+	System.out.println("created"+this.getClass().getSimpleName());
+	
+	}
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -18,8 +27,7 @@ public class FrontControllerConfiguration  extends AbstractAnnotationConfigDispa
 
 	@Override
 	protected String[] getServletMappings() {
-String[] validate = {"/"};
-		return validate;
+		return new String[] {"/"};
 	}
 
 }
